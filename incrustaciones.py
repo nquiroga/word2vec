@@ -38,7 +38,7 @@ PERIODOS = [
 def cargar_datos():
     """Carga los datos de discursos presidenciales."""
     try:
-        df_discursos = pd.read_csv('http://humanidades.com.ar/datos/discursos_lunes09.zip')
+        df_discursos = pd.read_csv('discursos_presidenciales_limpios.csv')
         df_discursos['anio'] = df_discursos['anio'].astype(int)
         df_discursos['presidente'] = df_discursos['presidente'].str.replace('.', '')
         return df_discursos
