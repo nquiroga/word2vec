@@ -1,6 +1,6 @@
 matplotlib
 seaborn
 scipy
-gensim
+gensim==4.2.0
 plotly
 scikit-learn
